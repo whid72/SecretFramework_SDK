@@ -1,0 +1,11 @@
+framework module SecretFramework {
+  umbrella header "SecretFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module SecretFramework.Swift {
+    header "SecretFramework-Swift.h"
+    requires objc
+}
